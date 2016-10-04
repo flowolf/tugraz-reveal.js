@@ -12,6 +12,7 @@
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
+@import "../../../lib/css/font-awesome/scss/font-awesome.scss";
 // ---------------------------------------------
 
 
@@ -77,6 +78,47 @@ section.has-dark-background {
 	z-index: 1;
 }
 
+// -------- TU Graz Font Logo ---------
+
+@font-face {
+  font-family: 'tugraz';
+  src:  url('../../lib/font/tugraz/tugraz.eot?fxirr0');
+  src:  url('../../lib/font/tugraz/tugraz.eot?fxirr0#iefix') format('embedded-opentype'),
+    url('../../lib/font/tugraz/tugraz.ttf?fxirr0') format('truetype'),
+    url('../../lib/font/tugraz/tugraz.woff?fxirr0') format('woff'),
+    url('../../lib/font/tugraz/tugraz.svg?fxirr0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tugraz' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tugraz_logo:before {
+  content: "\f0873";
+	vertical-align: 0.0em;
+	font-size: 0.8em;
+}
+.icon-tugraz_logo_color:before {
+  content: "\f0873";
+	vertical-align: 0.0em;
+	font-size: 0.8em;
+	color: $TUGraz_color;
+}
+
+// -------- / TU Graz Font Logo -------
 .reveal .footer{
 	position: absolute;
 	bottom: 1em;
@@ -185,8 +227,8 @@ img.emoji {
 
 //body > div > div.slides > section.stack.present > section.present > p > img
 .reveal .slides section p img {
-	max-height: 10em;
-	max-width: 15em;
+//	max-height: 10em;
+//	max-width: 15em;
 }
 //body > div > div.slides > section.stack.present > section.present > p:nth-child(2)
 
@@ -200,4 +242,8 @@ img.emoji {
 	max-width: 60%;
 	width: auto;
   height: auto;
+}
+
+.fa-tugraz-color {
+	color: $TUGraz_color;
 }
