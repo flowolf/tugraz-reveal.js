@@ -18,10 +18,12 @@ to insert it.
 
 Additionally [font-awesome](http://fontawesome.io/) is included, which allows you to use great icons in your slides.
 
+## Quickstart
+
 Quickest way to start:
 ```bash
 git clone https://github.com/hakimel/reveal.js my_slides
-git clone https://github.com/flowolf/tugraz-reveal.js.git myslides/tugraz_theme
+git clone https://github.com/flowolf/tugraz-reveal.js.git my_slides/tugraz_theme
 rsync -av --exclude 'README.md' --exclude 'LICENSE' my_slides/tugraz_theme/* my_slides/
 chromium-browser my_slides/tugraz_theme_demo.html
 ```
