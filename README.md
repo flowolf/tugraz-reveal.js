@@ -1,7 +1,7 @@
 # tugraz-reveal.js
 Style for reveal.js slides with TU Graz logo
 
-The Logo of TU Graz and IICM are not licensed under the MIT license.
+The Logo of TU Graz and ISDS are not licensed under the MIT license.
 
 ## Usage
 
